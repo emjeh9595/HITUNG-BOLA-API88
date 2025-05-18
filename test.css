@@ -1,0 +1,497 @@
+/* @import url('https://fonts.cdnfonts.com/css/roboto'); */
+
+:root {
+    --main-col: #c17b00;
+    --text-col: whitesmoke;
+    --text2-col: #4b4b4b;
+    --btn-col: #f8f9fa;
+    --btn2-col: #000000;
+    --text3-col: #090909;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('assets/bgd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.base-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    place-items: center;
+    margin: 20px;
+    margin-bottom: 300px;
+}
+
+.top-logo {
+    width: 40%;
+    max-width: max-content;
+}
+
+.top-logo img {
+    width: 100%;
+}
+
+.main-box {
+    width: 100%;
+    max-width: 1200px;
+    font-size: 14px;
+}
+
+.title-box {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--main-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.title-box span {
+    color: var(--text-col);
+    text-align: center;
+    font-size: large;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(240, 248, 255, 0.185);
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.bet-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.singlebet, .parlaybet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-col);
+    text-align: center;
+    width: 50%;
+    gap: 15px;
+    transition: all .3s ease;
+}
+
+.bet-wrapper {
+    display: flex;
+    overflow: hidden;
+    padding: 5px 10px 5px 10px;
+    justify-content: center;
+}
+
+.single, .parlay {
+    display: flex;
+    transition: all .3s ease;
+    flex-direction: column;
+    gap: 20px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.single.on, .parlay.on {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--btn2-col);
+    filter: drop-shadow(0px 4px 5px #0f0f0f);
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--main-col);
+    border-radius: 25px;
+    height: 2.75rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn span {
+    position: absolute;
+    margin-left: 32px;
+}
+
+input[type="text"], input[type="number"] {
+    border: 1px solid black;
+    background-color: transparent;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 700;
+    width: 72%;
+}
+
+input:focus {
+    border: 2px solid var(--main-col);
+}
+
+.btn.on {
+    color: var(--main-col);
+    background-color: #000000;
+}
+
+.btn:hover {
+    color: var(--main-col);
+    background-color: #000000;
+    opacity: .8;
+}
+
+.btn:active {
+    transform: translate(1px,1px);
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+.field {
+    flex-direction: column;
+}
+
+.odds, .status, .bet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+    width: 100%;
+    gap: 10px;
+    padding: 0 12px;
+    background-color: var(--btn-col);
+    color: var(--text2-col);
+}
+
+.status {
+    z-index: 1;
+}
+
+.custom-select {
+    width: 100%;
+    padding-right: 20px;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: transparent;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent black transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: var(--text2-col);
+    padding: 8px 0;
+    border: 1px solid transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.select-items div {
+    padding: 8px 6px;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: var(--btn-col);
+    top: 100%;
+    left: -5px;
+    right: 10px;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.odds.select {
+	z-index: 4;
+}
+	
+.odds:hover, .status:hover, .bet:hover, .odds:hover .select-selected, .status:hover .select-selected {
+    color: black;
+    background-color: var(--btn-col);
+    opacity: 1;
+}
+
+.odds:active, .status:active, .bet:active {
+    transform: translate(0,0);
+}
+
+.btn2 {
+    background-color: var(--main-col);
+    border-radius: 10px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 5px #0f0f0f);
+    user-select: none;
+    
+}
+
+.btn2 span {
+    position: relative;
+    color: var(--text-col);
+}
+
+.btn2 span:first-child {
+    left: 20px;
+    font-size: 16px;
+}
+
+.btn2 span:last-child {
+    right: 20px;
+    font-size: 28px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn3 {
+    width: 100%;
+    background-color: var(--btn-col);
+    filter: drop-shadow(0px 4px 5px #0f0f0f);
+    backdrop-filter: blur(2px);
+    border: 1px solid var(--main-col);
+    border-radius: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.note span {
+    color: var(--text3-col);
+    align-self: flex-start;
+    padding: 20px 0 0 20px;
+}
+
+.isian {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #4b4b4b;
+}
+
+.isian:last-child {
+    margin-bottom: 50px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #e7e7e7;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    border-radius: 50%;
+    position: absolute;
+    transition: all .2s ease;
+    margin-left: -30px;
+}
+
+.dropdown::before {
+    content: ">";
+    font-size: small;
+    font-weight: bolder;
+    position: relative;
+    transition: all .2s ease;
+}
+
+.dropdown.on::before {
+    transform: rotate(90deg);
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    margin-left: 25px;
+    user-select: none;
+}
+
+.desc {
+    position: relative;
+    top: -100%;
+    height: 0;
+    color: #4b4b4b;
+    margin-top: 0;
+    opacity: 0;
+    transition: all .4s ease;
+    overflow: hidden;
+}
+
+.desc.on {
+    margin-top: 15px;
+    opacity: 1;
+    top: 0;
+    height: auto;
+}
+
+.lgnd {
+	width: 5%;
+	padding: 8px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.odds.add {
+	width: 42%;
+}
+
+.btn.status {
+    width: 50%;
+}
+
+.btn.bet, .btn.odds {
+    padding-right: 22px;
+}
+
+.player-background {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+.player-background div {
+    width: 400px;
+}
+
+.player-background img {
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    input[type="text"], input[type="number"] {
+        border-left-width: 0;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url('assets/bgm.jpg');
+    }
+
+    .base-container {
+        margin-bottom: 170px;
+    }
+
+    .options {
+        flex-direction: column;
+    }
+
+    .player-background {
+        justify-content: flex-start;
+    }
+
+    .player-background img {
+        width: 300px;
+    }
+
+    .player-background img[alt="player2"] {
+        display: none;
+    }
+
+    .odds, .status, .bet, .lgnd {
+        width: auto;
+    }
+	
+	.lgnd {
+		text-align: center;
+	}
+
+    .odds, .btn.status, .btn.bet, .odds.add {
+        width: 91%;
+    }
+}

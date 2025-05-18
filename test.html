@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from free.kalkulatorparlay.asia/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 12:10:26 GMT -->
+<head>
+    <meta name="google-site-verification" content="Cx2md9Ne1omGO_44iSUyvNa10LwQ_JNm8AdNasJO4Gw" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIGROUP HITUNGAN PARLAY OTOMATIS</title>
+    <link rel="shortcut icon" href="assets/faviconapi.png" type="image/x-icon" />
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="parlay.js"></script>
+</head>
+
+<body>
+    <div class="base-container">
+        <div class="top-logo">
+            <a href="https://hitunganbola.website/"><img src="assets/LogoApigroupcopy.png" alt="Kalkulator Situs Bola Terpercaya"></a>
+        </div>
+        <div class="main-box">
+            <div class="title-box">
+                <span>
+                    Hitung Hasil Bettingan Kamu Di Sini!
+                </span>
+            </div>
+            <div class="content-box">
+                <div class="bet-type">
+                    <div class="btn singlebet on" onclick="ardFunction('1')">
+                        SINGLE BET
+                    </div>
+                    <div class="btn parlaybet" onclick="ardFunction('2')">
+                        PARLAY
+                    </div>
+                </div>
+                <div class="bet-wrapper">
+                    <div class="single on">
+                        <div class="options">
+                            <div class="btn odds">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="0,0,256,256">
+                                    <g fill="#0a0a0a" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(10.66667,10.66667)">
+                                            <path d="M16,10l-4,-4l-4,4l-5,-1l2,6h7h7l2,-6z" opacity="0.3"></path>
+                                            <path
+                                                d="M15.654,9.115l-3.654,-5.115l-3.654,5.115l-6.346,-2.115l2,9v4h16v-4l2,-9zM18.048,15.566l-0.048,0.214v0.22v2h-12v-2v-0.22l-0.048,-0.214l-1.234,-5.552l2.995,0.998l1.401,0.467l0.859,-1.202l2.027,-2.836l2.026,2.837l0.859,1.202l1.401,-0.467l2.995,-0.998z">
+                                            </path>
+                                            <path
+                                                d="M12,3c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM22,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM2,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM4,14h16v2h-16z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>
+                                    ODDS
+                                </span>
+                                <input formatter="percent"  type="number" step="0.5" name="odds" id="single_odds" class="odds-input" size="18">
+                            </div>
+
+                            <div class="btn status">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="0,0,256,256">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(4,4)">
+                                            <path transform="translate(64,114) rotate(-180)"
+                                                d="M4,55h56v2c0,1.1 -0.9,2 -2,2h-52c-1.1,0 -2,-0.9 -2,-2v-2z"
+                                                fill="#787878"></path>
+                                            <rect x="-57" y="-55" transform="rotate(-180)" width="16.67" height="13"
+                                                fill="#787878"></rect>
+                                            <rect x="-23.67" y="-55" transform="rotate(-180)" width="16.67" height="19"
+                                                fill="#787878"></rect>
+                                            <rect x="-40.33" y="-55" transform="rotate(-180)" width="16.67" height="26"
+                                                fill="#0e0e0e"></rect>
+                                            <path
+                                                d="M32,5l2.92,5.93l6.54,0.95l-4.73,4.61l1.12,6.51l-5.85,-3.07l-5.85,3.07l1.12,-6.51l-4.73,-4.61l6.54,-0.95z"
+                                                fill="#131313"></path>
+                                            <g fill="#090909">
+                                                <path
+                                                    d="M58,54v-12c0,-0.55 -0.45,-1 -1,-1h-15.67v-12c0,-0.55 -0.45,-1 -1,-1h-16.66c-0.55,0 -1,0.45 -1,1v6h-15.67c-0.55,0 -1,0.45 -1,1v18c-1.65,0 -3,1.35 -3,3v2c0,0.55 0.45,1 1,1h56c0.55,0 1,-0.45 1,-1v-2c0,-1.65 -1.35,-3 -3,-3zM56,43v11h-14.67v-11zM24.67,30h14.67v24h-14.67zM8,37h14.67v17h-14.67zM59,58h-54v-1c0,-0.55 0.45,-1 1,-1h52c0.55,0 1,0.45 1,1z">
+                                                </path>
+                                                <path
+                                                    d="M26.19,16.84l-1.03,6c-0.06,0.38 0.09,0.75 0.4,0.98c0.31,0.22 0.72,0.25 1.05,0.08l5.38,-2.83l5.38,2.83c0.15,0.08 0.31,0.12 0.47,0.12c0.21,0 0.41,-0.06 0.59,-0.19c0.31,-0.22 0.46,-0.6 0.4,-0.98l-1.03,-6l4.36,-4.25c0.27,-0.27 0.37,-0.66 0.25,-1.02c-0.12,-0.36 -0.43,-0.63 -0.81,-0.68l-6.02,-0.88l-2.69,-5.45c-0.34,-0.68 -1.46,-0.68 -1.79,0l-2.69,5.45l-6.02,0.88c-0.38,0.05 -0.69,0.32 -0.81,0.68c-0.12,0.36 -0.02,0.76 0.25,1.02l4.36,4.25zM29.22,11.92c0.33,-0.05 0.61,-0.25 0.75,-0.55l2.03,-4.11l2.03,4.11c0.15,0.29 0.43,0.5 0.75,0.55l4.53,0.66l-3.28,3.2c-0.24,0.23 -0.34,0.56 -0.29,0.88l0.77,4.52l-4.05,-2.13c-0.15,-0.08 -0.31,-0.12 -0.47,-0.12c-0.16,0 -0.32,0.04 -0.47,0.12l-4.05,2.13l0.77,-4.52c0.06,-0.32 -0.05,-0.66 -0.29,-0.88l-3.28,-3.2l4.53,-0.66z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <div class="custom-select">
+                                    <Select id="single_menang">
+                                        <option value="0">Kemenangan</option>
+                                        <option value="1">Full Menang</option>
+                                        <option value="2">Menang 1/2</option>
+                                        <option value="3">Seri</option>
+                                        <option value="4">Kalah 1/2</option>
+                                        <option value="5">Kalah</option>
+                                    </Select>
+                                </div>
+                            </div>
+
+                            <div class="btn bet">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="0,0,256,256">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(3.2,3.2)">
+                                            <path
+                                                d="M40.001,77.5c-20.677,0 -37.5,-16.822 -37.5,-37.5c0,-20.677 16.822,-37.5 37.5,-37.5c20.677,0 37.499,16.823 37.499,37.5c0,20.678 -16.822,37.5 -37.499,37.5z"
+                                                fill="#787878"></path>
+                                            <path
+                                                d="M40.001,3.001c20.402,0 37,16.598 37,37c0,20.402 -16.598,37 -37,37c-20.402,0 -37,-16.598 -37,-37c0,-20.402 16.598,-37 37,-37M40.001,2.001c-20.987,0 -38,17.013 -38,38c0,20.987 17.013,38 38,38c20.987,0 38,-17.013 38,-38c0,-20.987 -17.014,-38 -38,-38z"
+                                                fill="#000000"></path>
+                                            <path
+                                                d="M34.049,30.273c0,-2.227 1.996,-4.147 6.102,-4.147c4.65,0 7.996,1.317 10.597,2.894v-7.515c-1.933,-1.076 -4.854,-1.707 -8.769,-1.893v-5.065h-4.063v5.177c-3.395,0.334 -6.123,1.527 -8.183,3.577c-2.06,2.05 -3.091,4.531 -3.091,7.444c0,11.51 19.319,11.866 19.319,18.174c0,2.245 -2.813,3.98 -5.95,3.98c-6.422,0 -11.54,-2.718 -12.616,-3.59v7.709c3.247,1.688 6.754,2.542 10.52,2.561v5.872h4.063v-6.039c3.655,-0.408 6.464,-1.553 8.435,-3.436c1.963,-1.883 2.946,-4.366 2.946,-7.446c0.001,-12.288 -19.31,-11.349 -19.31,-18.257z"
+                                                fill="#000000"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>
+                                    Nilai Bet
+                                </span>
+                                <input name="nilaibet" id="single_bet" class="bet-input" type="number"  step="100" size="18">
+                            </div>
+                        </div>
+                        <div class="result">
+                            <div class="btn2 modalbet">
+                                <span>Modal Taruhan</span>
+                                <span id="single_result_modal" class="result modal">0</span>
+                            </div>
+                            <div class="btn2 kemenangan">
+                                <span>Kemenangan</span>
+                                <span id="single_result_win" class="result winn">0</span>
+                            </div>
+                        </div>
+
+                        <div class="btn3 note">
+                            <span>Catatan</span>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian1">
+                                    <div class="dropdown"></div>
+                                    Jika taruhan anda menang full
+                                </div>
+                                <div class="desc">Odds x Bet<br>1.20 x 1000 = 1200 Kemenangan<br>Modal anda akan
+                                    kembali,
+                                    sehingga jika di total Modal + Kemenangan = 2200</div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian2">
+                                    <div class="dropdown"></div>
+                                    Jika taruhan anda menang setengah
+                                </div>
+                                <div class="desc">Odds x Bet : 2<br>( 1.20 x 1000 ) : 2 = 600 Kemenangan<br>Modal anda
+                                    akan
+                                    kembali, sehingga jika di total Modal + Kemenangan = 1600</div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian3">
+                                    <div class="dropdown"></div>
+                                    Jika taruhan anda kalah setengah
+                                </div>
+                                <div class="desc">Odds ( 0.5 ) x Jumlah Taruhan<br>0.5 x 1000 = 500<br>Modal anda akan
+                                    kembali total = 500<br>Note : Untuk taruhan yang Lose half/kalah setengah, Odds
+                                    diganti
+                                    menjadi 0.5
+                                </div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian4">
+                                    <div class="dropdown"></div>
+                                    Jika taruhan anda kalah
+                                </div>
+                                <div class="desc">Tidak ada modal taruhan yang kembali ke akun anda.</div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian5">
+                                    <div class="dropdown"></div>
+                                    Jika taruhan anda seri atau void
+                                </div>
+                                <div class="desc">Maka modal taruhan akan dikembalikan ke akun anda.</div>
+                            </div>
+                            <div class="isian">
+                                note:
+                                <span style="padding: 5px 0 0 20px;">
+                                    Jika odds minus, maka MODAL TARUHAN akan dikalikan dengan odds, dan hasil KEMENANGAN
+                                    akan sama dengan NILAI BET.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parlay">
+                        <div class="options">
+                            <div class="btn odds select">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="24px" height="24px"
+                                    viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                        fill="#000000" stroke="none">
+                                        <path
+                                            d="M2412 5100 c-40 -11 -95 -31 -121 -45 -26 -14 -346 -245 -711 -513 l-663 -486 -404 -4 c-391 -4 -405 -5 -435 -26 -101 -69 -102 -205 -1 -267 37 -23 45 -24 300 -27 l263 -3 2 -1202 3 -1202 27 -74 c33 -91 85 -170 154 -236 38 -37 266 -176 865 -530 807 -476 814 -480 869 -480 55 0 60 3 869 480 876 517 886 524 963 651 20 32 47 88 60 124 l23 65 3 1202 2 1202 263 3 c255 3 263 4 300 27 101 62 100 198 -1 267 -30 21 -44 22 -435 26 l-403 4 -657 482 c-362 265 -681 496 -710 512 -118 66 -286 86 -425 50z m258 -325 c19 -10 248 -173 508 -364 l472 -346 -545 -3 c-300 -1 -790 -1 -1090 0 l-545 3 471 345 c259 190 478 349 488 354 67 40 176 44 241 11z m1490 -2210 c0 -1139 0 -1165 -20 -1218 -11 -29 -36 -69 -57 -89 -21 -20 -370 -233 -778 -473 -638 -376 -742 -435 -761 -426 -80 36 -1476 869 -1507 899 -21 20 -46 59 -57 89 -20 53 -20 79 -20 1218 l0 1165 1600 0 1600 0 0 -1165z" />
+                                        <path
+                                            d="M1375 3186 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 25 -8 401 -10 1194 -8 1150 3 1157 3 1184 24 53 39 69 71 69 134 0 63 -16 95 -69 134 -27 21 -33 21 -1194 23 -955 2 -1173 0 -1197 -11z" />
+                                        <path
+                                            d="M1387 2656 c-49 -18 -64 -32 -89 -80 -37 -73 -13 -153 62 -203 l33 -23 1167 0 1167 0 33 23 c50 33 72 70 77 124 5 59 -25 117 -77 147 -35 21 -45 21 -1185 23 -944 2 -1157 0 -1188 -11z" />
+                                        <path
+                                            d="M1360 2108 c-50 -34 -72 -71 -77 -125 -5 -59 25 -117 77 -147 35 -21 42 -21 1200 -21 1158 0 1165 0 1200 21 52 30 82 88 77 147 -5 54 -27 91 -77 125 l-33 22 -1167 0 -1167 0 -33 -22z" />
+                                        <path
+                                            d="M1375 1586 c-67 -29 -105 -106 -91 -181 9 -47 59 -102 104 -115 25 -8 401 -10 1194 -8 1150 3 1157 3 1184 24 53 39 69 71 69 134 0 63 -16 95 -69 134 -27 21 -33 21 -1194 23 -955 2 -1173 0 -1197 -11z" />
+                                    </g>
+                                </svg>
+                                <div class="custom-select partai">
+                                    <Select>
+                                        <option value="0">Pilih Berapa Partai</option>
+                                        <option value="1">3 Partai</option>
+                                        <option value="2">4 Partai</option>
+                                        <option value="3">5 Partai</option>
+                                        <option value="4">6 Partai</option>
+                                        <option value="5">7 Partai</option>
+                                        <option value="6">8 Partai</option>
+                                        <option value="7">9 Partai</option>
+                                        <option value="8">10 Partai</option>
+                                        <option value="9">11 Partai</option>
+                                        <option value="10">12 Partai</option>
+                                        <option value="11">13 Partai</option>
+                                        <option value="12">14 Partai</option>
+                                        <option value="13">15 Partai</option>
+                                        <option value="14">16 Partai</option>
+                                        <option value="15">17 Partai</option>
+                                        <option value="16">18 Partai</option>
+                                        <option value="17">19 Partai</option>
+                                        <option value="18">20 Partai</option>
+                                    </Select>
+                                </div>
+                            </div>
+                            <div class="btn bet">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                    viewBox="0,0,256,256">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(3.2,3.2)">
+                                            <path
+                                                d="M40.001,77.5c-20.677,0 -37.5,-16.822 -37.5,-37.5c0,-20.677 16.822,-37.5 37.5,-37.5c20.677,0 37.499,16.823 37.499,37.5c0,20.678 -16.822,37.5 -37.499,37.5z"
+                                                fill="#787878"></path>
+                                            <path
+                                                d="M40.001,3.001c20.402,0 37,16.598 37,37c0,20.402 -16.598,37 -37,37c-20.402,0 -37,-16.598 -37,-37c0,-20.402 16.598,-37 37,-37M40.001,2.001c-20.987,0 -38,17.013 -38,38c0,20.987 17.013,38 38,38c20.987,0 38,-17.013 38,-38c0,-20.987 -17.014,-38 -38,-38z"
+                                                fill="#000000"></path>
+                                            <path
+                                                d="M34.049,30.273c0,-2.227 1.996,-4.147 6.102,-4.147c4.65,0 7.996,1.317 10.597,2.894v-7.515c-1.933,-1.076 -4.854,-1.707 -8.769,-1.893v-5.065h-4.063v5.177c-3.395,0.334 -6.123,1.527 -8.183,3.577c-2.06,2.05 -3.091,4.531 -3.091,7.444c0,11.51 19.319,11.866 19.319,18.174c0,2.245 -2.813,3.98 -5.95,3.98c-6.422,0 -11.54,-2.718 -12.616,-3.59v7.709c3.247,1.688 6.754,2.542 10.52,2.561v5.872h4.063v-6.039c3.655,-0.408 6.464,-1.553 8.435,-3.436c1.963,-1.883 2.946,-4.366 2.946,-7.446c0.001,-12.288 -19.31,-11.349 -19.31,-18.257z"
+                                                fill="#000000"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>
+                                    Nilai Bet
+                                </span>
+                                <input id="parlay_bet" class="bet-input" type="number"  step="100" size="18">
+                            </div>
+                        </div>
+                        <div class="options field"></div>
+                        <div class="result">
+                            <div class="btn2 kemenangan">
+                                <span>Hasil Akhir Bet</span>
+                                <span id="parlay_result_win" class="result winn">0</span>
+                            </div>
+                        </div>
+                        <div class="btn3 note">
+                            <span>Catatan</span>
+                            <div class="isian">
+                                Ada 5 hasil untuk taruhan Mix Parlay:
+                                <span style="padding: 5px 0 0 15px;">
+                                    1. W = Win ( Odds dihitung semuanya )<br>
+                                    2. WH = Win Half ( Odds dibagi )<br>
+                                    3. D = Draw ( Odds tidak hitung )<br>
+                                    4. LH = Lose Half ( Odds menjadi 0.5 )<br>
+                                    5. L = Lose ( Odds Menjadi 0 )<br><br>
+                                </span>
+                                Rumus menghitung Betting parlay: ( Total semua perkalian odds ) - 1 kemudian dikalikan dengan Nilai Bet
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian1">
+                                    <div class="dropdown"></div>
+                                    Cara menghitung jika semua taruhan W ( WIN / menang )
+                                </div>
+                                <div class="desc">Jika taruhan WIN atau menang semua, maka semua odds di kalikan lalu di kurang 1, kemudian di kalikan dengan Nilai Bet anda.
+                                </div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian2">
+                                    <div class="dropdown"></div>
+                                    Cara menghitung jika ada taruhan yang WH ( Win Half / Menang Setengah )
+                                </div>
+                                <div class="desc">Jika ada taruhan Win Half atau Menang Setengah, maka odds pertandingan tersebut menjadi di kurang 1 di bagi 2 kemudian di tambah 1.</div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian3">
+                                    <div class="dropdown"></div>
+                                    Cara menghitung jika ada taruhan yang D ( DRAW / Seri )
+                                </div>
+                                <div class="desc">Jika ada taruhan DRAW atau seri, maka odds pertandingan tersebut tidak dihitung.
+                                </div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian4">
+                                    <div class="dropdown"></div>
+                                    Cara menghitung jika ada taruhan yang LH ( Lose Half / Kalah Setengah )
+                                </div>
+                                <div class="desc">Jika ada taruhan Lose Half atau Kalah Setengah, maka odds pertandingan tersebut menjadi 0.5.</div>
+                            </div>
+                            <div class="isian">
+                                <div class="wrapper" onclick="dropNote(this)">
+                                    <input type="checkbox" class="isian5">
+                                    <div class="dropdown"></div>
+                                    Cara menghitung jika ada taruhan yang L ( Lose / Kalah )
+                                </div>
+                                <div class="desc">Jika ada taruhan Lose atau kalah, maka semua taruhan anda akan di hitung kalah.</div>
+            
+</body>
+<script>
+    const type1 = document.querySelector(".btn.singlebet");
+    const type2 = document.querySelector(".btn.parlaybet");
+
+    const single = document.querySelector(".single");
+    const parlay = document.querySelector(".parlay");
+
+    function ardFunction(e) {
+        if (e == "1" && type2.className == "btn parlaybet on") {
+            type1.classList.add("on");
+            type2.classList.remove("on");
+            single.classList.add("on");
+            parlay.classList.remove("on");
+            // single.style.display = "flex";
+            // parlay.style.display = "none";
+            single.style.opacity = "1";
+            parlay.style.opacity = "0";
+        } else if (e == "2" && type1.className == "btn singlebet on") {
+            type1.classList.remove("on");
+            type2.classList.add("on");
+            single.classList.remove("on");
+            parlay.classList.add("on");
+            // single.style.display = "none";
+            // parlay.style.display = "flex";
+            single.style.opacity = "0";
+            parlay.style.opacity = "1";
+        }
+    }
+
+    function dropNote(id) {
+        if (id.firstElementChild.checked) {
+            id.firstElementChild.checked = false;
+            id.previousSibling.parentElement.lastElementChild.classList.remove("on");
+            id.lastElementChild.classList.remove("on");
+        } else if (!id.firstElementChild.checked) {
+            id.firstElementChild.checked = true;
+            id.previousSibling.parentElement.lastElementChild.classList.add("on");
+            id.lastElementChild.classList.add("on");
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (screen.width > 600) {
+            var odsize = document.querySelector(".odds-input");
+            var betsize = document.querySelector(".bet-input");
+        }
+    })
+
+    document.addEventListener("click", function () {
+        var total = document.querySelector(".custom-select.partai .select-selected").innerHTML;
+        const field = document.querySelector(".options.field");
+        var kids = document.querySelectorAll(".options.child");
+
+        try {
+            var jumlah = parseInt(total.slice(0, 2))
+            if (Number.isInteger(jumlah) && jumlah != kids.length) {
+                for (let i = 0; i < kids.length; i++) {
+                    kids[i].remove();
+                }
+                for (let i = 1; i <= jumlah; i++) {
+                    var partai = "<div class='options child'><div class='lgnd'>ODDS " + i + "</div><div class='btn odds add'><svg version='1.1'xmlns='http://www.w3.org/2000/svg'xmlns:xlink='http://www.w3.org/1999/xlink' width='24px' height='24px' viewBox='0,0,256,256'><g fill='#0a0a0a' fill-rule='nonzero' stroke='none' stroke-width='1' stroke-linecap='butt' stroke-linejoin='miter' stroke-miterlimit='10' stroke-dasharray='' stroke-dashoffset='0' font-family='none' font-weight='none' font-size='none' text-anchor='none' style='mix-blend-mode: normal'><g transform='scale(10.66667,10.66667)'><path d='M16,10l-4,-4l-4,4l-5,-1l2,6h7h7l2,-6z' opacity='0.3'></path><path d='M15.654,9.115l-3.654,-5.115l-3.654,5.115l-6.346,-2.115l2,9v4h16v-4l2,-9zM18.048,15.566l-0.048,0.214v0.22v2h-12v-2v-0.22l-0.048,-0.214l-1.234,-5.552l2.995,0.998l1.401,0.467l0.859,-1.202l2.027,-2.836l2.026,2.837l0.859,1.202l1.401,-0.467l2.995,-0.998z'></path><path d='M12,3c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM22,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM2,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM4,14h16v2h-16z'></path></g></g></svg><span>ODDS</span><input id='parlay_odds_1' class='odds-input' type='text' size='18'></div><div class='btn status'><svg version='1.1'xmlns='http://www.w3.org/2000/svg'xmlns:xlink='http://www.w3.org/1999/xlink' width='24px' height='24px' viewBox='0,0,256,256'><g fill='none' fill-rule='nonzero' stroke='none' stroke-width='1' stroke-linecap='butt' stroke-linejoin='miter' stroke-miterlimit='10' stroke-dasharray='' stroke-dashoffset='0' font-family='none' font-weight='none' font-size='none' text-anchor='none' style='mix-blend-mode: normal'><g transform='scale(4,4)'><path transform='translate(64,114) rotate(-180)' d='M4,55h56v2c0,1.1 -0.9,2 -2,2h-52c-1.1,0 -2,-0.9 -2,-2v-2z' fill='#787878'></path><rect x='-57' y='-55' transform='rotate(-180)' width='16.67' height='13' fill='#787878'></rect><rect x='-23.67' y='-55' transform='rotate(-180)' width='16.67' height='19' fill='#787878'></rect><rect x='-40.33' y='-55' transform='rotate(-180)' width='16.67' height='26' fill='#0e0e0e'></rect><path d='M32,5l2.92,5.93l6.54,0.95l-4.73,4.61l1.12,6.51l-5.85,-3.07l-5.85,3.07l1.12,-6.51l-4.73,-4.61l6.54,-0.95z' fill='#131313'></path><g fill='#090909'><path d='M58,54v-12c0,-0.55 -0.45,-1 -1,-1h-15.67v-12c0,-0.55 -0.45,-1 -1,-1h-16.66c-0.55,0 -1,0.45 -1,1v6h-15.67c-0.55,0 -1,0.45 -1,1v18c-1.65,0 -3,1.35 -3,3v2c0,0.55 0.45,1 1,1h56c0.55,0 1,-0.45 1,-1v-2c0,-1.65 -1.35,-3 -3,-3zM56,43v11h-14.67v-11zM24.67,30h14.67v24h-14.67zM8,37h14.67v17h-14.67zM59,58h-54v-1c0,-0.55 0.45,-1 1,-1h52c0.55,0 1,0.45 1,1z'></path><path d='M26.19,16.84l-1.03,6c-0.06,0.38 0.09,0.75 0.4,0.98c0.31,0.22 0.72,0.25 1.05,0.08l5.38,-2.83l5.38,2.83c0.15,0.08 0.31,0.12 0.47,0.12c0.21,0 0.41,-0.06 0.59,-0.19c0.31,-0.22 0.46,-0.6 0.4,-0.98l-1.03,-6l4.36,-4.25c0.27,-0.27 0.37,-0.66 0.25,-1.02c-0.12,-0.36 -0.43,-0.63 -0.81,-0.68l-6.02,-0.88l-2.69,-5.45c-0.34,-0.68 -1.46,-0.68 -1.79,0l-2.69,5.45l-6.02,0.88c-0.38,0.05 -0.69,0.32 -0.81,0.68c-0.12,0.36 -0.02,0.76 0.25,1.02l4.36,4.25zM29.22,11.92c0.33,-0.05 0.61,-0.25 0.75,-0.55l2.03,-4.11l2.03,4.11c0.15,0.29 0.43,0.5 0.75,0.55l4.53,0.66l-3.28,3.2c-0.24,0.23 -0.34,0.56 -0.29,0.88l0.77,4.52l-4.05,-2.13c-0.15,-0.08 -0.31,-0.12 -0.47,-0.12c-0.16,0 -0.32,0.04 -0.47,0.12l-4.05,2.13l0.77,-4.52c0.06,-0.32 -0.05,-0.66 -0.29,-0.88l-3.28,-3.2l4.53,-0.66z'></path></g></g></g></svg><div class='ardx custom-select'><Select><option value='0'>Kemenangan</option><option value='1'>Full Menang</option><option value='2'>Menang 1/2</option><option value='3'>Seri</option><option value='4'>Kalah 1/2</option><option value='5'>Kalah</option></Select></div></div></div>";
+                    field.innerHTML += partai;
+                }
+            }
+            var ardx, i, j, l, ll, selElmnt, a, b, c;
+            ardx = document.getElementsByClassName("ardx custom-select");
+            l = ardx.length;
+            for (i = 0; i < l; i++) {
+                if (ardx[i].children.length < 3) {
+                    selElmnt = ardx[i].getElementsByTagName("select")[0];
+                    ll = selElmnt.length;
+                    /* For each element, create a new DIV that will act as the selected item: */
+                    a = document.createElement("DIV");
+                    a.setAttribute("class", "select-selected");
+                    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                    ardx[i].appendChild(a);
+                    /* For each element, create a new DIV that will contain the option list: */
+                    b = document.createElement("DIV");
+                    b.setAttribute("class", "select-items select-hide");
+                    for (j = 1; j < ll; j++) {
+                        /* For each option in the original select element,
+                        create a new DIV that will act as an option item: */
+                        c = document.createElement("DIV");
+                        c.innerHTML = selElmnt.options[j].innerHTML;
+                        c.addEventListener("click", function (e) {
+                            /* When an item is clicked, update the original select box,
+                            and the selected item: */
+                            var y, i, k, s, h, sl, yl;
+                            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                            sl = s.length;
+                            h = this.parentNode.previousSibling;
+                            for (i = 0; i < sl; i++) {
+                                if (s.options[i].innerHTML == this.innerHTML) {
+                                    s.selectedIndex = i;
+                                    h.innerHTML = this.innerHTML;
+                                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                                    yl = y.length;
+                                    for (k = 0; k < yl; k++) {
+                                        y[k].removeAttribute("class");
+                                    }
+                                    this.setAttribute("class", "same-as-selected");
+                                    break;
+                                }
+                            }
+                            h.click();
+                        });
+                        b.appendChild(c);
+                    }
+                    ardx[i].appendChild(b);
+                    var stts = document.querySelectorAll(".options.child .btn.status");
+                    a.addEventListener("click", function (e) {
+                        /* When the select box is clicked, close any other select boxes,
+                        and open/close the current select box: */
+                        e.stopPropagation();
+                        closeAllSelect(this);
+                        this.nextSibling.classList.toggle("select-hide");
+                        for (var r = 0; r < stts.length; r++) {
+                            if (stts[r] != this.parentElement.parentElement) {
+                                stts[r].style.zIndex = 0;
+                            }
+
+                        }
+                        this.parentElement.parentElement.style.zIndex = 2;
+                        this.classList.toggle("select-arrow-active");
+                    });
+                }
+            }
+        } catch (e) {
+        }
+
+    })
+
+
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /* Look for any elements with the class "custom-select": */
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        ll = selElmnt.length;
+        /* For each element, create a new DIV that will act as the selected item: */
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /* For each element, create a new DIV that will contain the option list: */
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < ll; j++) {
+            /* For each option in the original select element,
+            create a new DIV that will act as an option item: */
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function (e) {
+                /* When an item is clicked, update the original select box,
+                and the selected item: */
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = y.length;
+                        for (k = 0; k < yl; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function (e) {
+            /* When the select box is clicked, close any other select boxes,
+            and open/close the current select box: */
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+
+    function closeAllSelect(elmnt) {
+        /* A function that will close all select boxes in the document,
+        except the current select box: */
+        var x, y, i, xl, yl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    /* If the user clicks anywhere outside the select box,
+    then close all select boxes: */
+    document.addEventListener("click", closeAllSelect);
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('hello');
+    if (token === "ard-iframe") {
+        document.querySelector("body").style.background = "none";
+        document.querySelector("html").style.scrollbarWidth = "none";
+    }
+</script>
+
+
+<!-- Mirrored from free.kalkulatorparlay.asia/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 12:10:27 GMT -->
+</html>
